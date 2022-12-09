@@ -29,3 +29,12 @@ img {
 h1 a {
   color: red;
 }/*# sourceMappingURL=main.css.map */
+button {
+  background-color: blue;
+}
+a {
+  color: blueviolet;
+}
+h1 {
+  border-color: brown;
+}
