@@ -1,8 +1,13 @@
-.panel, .big-panel, .little-panel {
+.redov {
   border: 2px solid black;
   background: lightblue;
   margin: 10px;
-  @i;
+  border: 1px solid orange;
+}
+
+.panel, .big-panel, .little-panel {
+  text-align: center;
+  padding: 4px;
 }
 
 .little-panel {

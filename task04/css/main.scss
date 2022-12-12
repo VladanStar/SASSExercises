@@ -1,12 +1,15 @@
-@mixin name {
-    border-radius: 50%;
-    border: 2px dotted green;
+@mixin bordered($color: blue, $width: 1px) {
+    border: $width solid $color;
 }
 .redov {
     border: 2px solid black;
     background: lightblue;
     margin: 10px;
-    @include name();
+     @include bordered($color: orange);
+}
+.panel {
+    text-align: center;
+    padding: 4px;
 }
 .little-panel {
     @extend .panel;
