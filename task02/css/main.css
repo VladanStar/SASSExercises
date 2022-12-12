@@ -1,1 +1,9 @@
-/*# sourceMappingURL=main.css.map */
+nav ul {
+  background: #2c3e50;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}/*# sourceMappingURL=main.css.map */
