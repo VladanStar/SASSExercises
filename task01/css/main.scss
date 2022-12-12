@@ -31,6 +31,7 @@ $primary:#326dee;
 $secondary: #1ac888;
 $error:#d32752;
 $info:#f6c31c;
+$primary-clor:green;
 
 h1 {
     color:$primary;
@@ -42,4 +43,7 @@ button {
     color: $info;
     border: 0px;
     background: $primary;
+}
+p {
+    color: $primary-clor;
 }
