@@ -1,4 +1,8 @@
-.panel {
+@mixin name {
+    border-radius: 50%;
+    border: 2px dotted green;
+}
+p {
     border: 2px solid black;
     background: lightblue;
     margin: 10px;
@@ -15,8 +19,4 @@
     font-size: 32px;
     padding: 20px;
 
-}
-@mixin name {
-    border-radius: 50%;
-    border: 2px dotted green;
 }
