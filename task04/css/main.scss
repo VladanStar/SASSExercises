@@ -1,0 +1,17 @@
+.panel {
+    border: 2px solid black;
+    background: lightblue;
+    margin: 10px;
+}
+.little-panel {
+    @extend .panel;
+    font-size: 12px;
+    padding: 5px;
+
+}
+.big-panel {
+    @extend .panel;
+    font-size: 32px;
+    padding: 20px;
+
+}
