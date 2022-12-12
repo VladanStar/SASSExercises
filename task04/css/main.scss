@@ -2,6 +2,7 @@
     border: 2px solid black;
     background: lightblue;
     margin: 10px;
+    @include name();
 }
 .little-panel {
     @extend .panel;
@@ -14,4 +15,8 @@
     font-size: 32px;
     padding: 20px;
 
+}
+@mixin name {
+    border-radius: 50%;
+    border: 2px dotted green;
 }

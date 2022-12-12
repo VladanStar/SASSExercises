@@ -2,6 +2,7 @@
   border: 2px solid black;
   background: lightblue;
   margin: 10px;
+  @i;
 }
 
 .little-panel {
