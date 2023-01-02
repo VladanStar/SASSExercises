@@ -1,36 +1,3 @@
-.navbar-inverse.nav-upper {
-    height: 50px;
-}
-
-.navbar-inverse.nav-upper ul {
-    float: right;
-    display: table;
-}
-
-.navbar-inverse.nav-upper .navbar-upper>li {
-    display: table-cell;
-    font-size: 14px;
-}
-
-.navbar-inverse.nav-upper .navbar-upper>li>a {
-    color: #777;
-}
-
-@media (min-width: 768px) {
-    .navbar.navbar-lower .navbar-nav {
-        margin-left: 100px;
-    }
-}
-
-.navbar-logo {
-    background-image: url('https://lh3.googleusercontent.com/-tw5LsU4Fg28/Umo6BBcoCnI/AAAAAAAAmjE/1iqULsem06E/w896-h896/heisencat.png');
-    width: 90px;
-    height: 90px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 5px;
-    left: 15px;
-    z-index: 1051;
+body {
+    outline: 2px solid red !important;
 }
