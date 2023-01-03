@@ -63,18 +63,17 @@
       <h1 class="display-5 fw-bold">Gde zelite da putujete?</h1>
       <p>Pretrazite nasu veliku ponudu premium putovanja</p>
       <!-- Forma -->
-      <form class="row gy-2 gx-3 align-items-center">
+      <form class="row gy-2 gx-3 align-items-center container">
         <div class="col-auto">
           <input type="text" class="form-control" placeholder="Destinacija" />
         </div>
         <div class="col-auto">
-          <div class="input-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Username"
-            />
-          </div>
+          <select class="form-select">
+            <option selected>Mesec</option>
+            <option value="1">Oktobar</option>
+            <option value="2">Novembar</option>
+            <option value="3">Decembar</option>
+          </select>
         </div>
         <div class="col-auto">
           <select class="form-select">
@@ -86,7 +85,7 @@
         </div>
 
         <div class="col-auto col-sm-3">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-danger">Pretraga</button>
         </div>
       </form>
     </section>
