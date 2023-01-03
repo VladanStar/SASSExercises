@@ -6,3 +6,9 @@ body {
 .container {
   width: 70% !important;
 }
+.hero {
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./img/hero.jpg");
+    height: 100vh;
+}
