@@ -1,3 +1,6 @@
 var x = 1;
 let y = "Niska";
 const z = true;
+console.log(8 * "2", typeof (8 * "2"))
+console.log("5" + 1, typeof ('5' + 1, 5 - 1, typeof ('5' - 1)));
+console.log(8*"two",typeof(8*"two"));
