@@ -7,11 +7,11 @@ console.log(8 * "two", typeof (8 * "two"));
 console.log(8 * NaN, typeof NaN);
 let recenica = "vladan cupric"
 console.log(recenica.indexOf("nepostojeca"));
-<<<<<<< HEAD
+// <<<<<<< HEAD
 console.log(null == undefined);
 console.log(typeof null);
 console.log(typeof undefined);
-=======
+// =======
 let niz_brojeva = [1,2,3,4,5];
 console.log(typeof niz_brojeva);
 
@@ -78,4 +78,4 @@ const niz1 = ['a', 'b']; // Kreiramo novi niz od dva elementa i cuvamo njegovu r
 const niz2 = ['a', 'b']; // Kreiramo novi niz od dva elementa i cuvamo njegovu referencu u niz2
 
 console.log('Da li su nizovi jednaki?', niz1 == niz2);
->>>>>>> 7472a2b34d0c3a2180527e18132c6262097948fc
+// >>>>>>> 7472a2b34d0c3a2180527e18132c6262097948fc
