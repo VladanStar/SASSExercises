@@ -1,0 +1,1 @@
+const prviPasus = document.getElementById("prvi")
