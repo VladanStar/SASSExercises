@@ -27,3 +27,13 @@ function negiraj_bulove_vrednosti(niz) {
 console.log('Mesani niz pre poziva funkcije:   ' + mesani_niz);
 negiraj_bulove_vrednosti(mesani_niz);
 console.log('Mesani niz nakon poziva funkcije: ' + mesani_niz);
+
+
+
+let sekvenca = 'a-t-a-g-c-a-g-t-c-c-a';
+let nukleotide = sekvenca.split('-');
+console.log('Kreirali smo niz nukleotida: ' + nukleotide);
+
+nukleotide = ['a', 't', 'a', 'g', 'c', 'a', 'g', 't', 'c', 'c', 'a'];
+sekvenca = nukleotide.join('');
+console.log('Kreirali smo DNK sekvencu: ' + sekvenca);
