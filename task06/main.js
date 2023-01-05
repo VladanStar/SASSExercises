@@ -79,3 +79,25 @@ const niz2 = ['a', 'b']; // Kreiramo novi niz od dva elementa i cuvamo njegovu r
 
 console.log('Da li su nizovi jednaki?', niz1 == niz2);
 // >>>>>>> 7472a2b34d0c3a2180527e18132c6262097948fc
+console.log('Operator ==');
+
+console.log('0 == false <=>', 0 == false);
+console.log("42 == '42' <=>", 42 == '42');
+console.log('1 == "jedan" <=>', 1 == 'jedan');
+
+console.log('Operator ===');
+
+console.log('0 === false <=>', 0 === false);
+console.log("42 === '42' <=>", 42 === '42');
+console.log("1 === 'jedan' <=>", 1 === 'jedan');
+console.log('0 === 0 <=>', 0 === 0);
+console.log('false === false <=>', false === false);
+console.log('\'jedan\' === "jedan" <=>', 'jedan' === 'jedan');
+
+let generisani_broj = Math.random();
+console.log('Generisani broj iz intervala [0, 1) je:', generisani_broj);
+generisani_broj = Math.floor(Math.random() * 100 + 50);
+console.log(
+  'Generisani broj iz celobrojnog intervala [50, 150) je:',
+  generisani_broj
+);
