@@ -128,3 +128,8 @@ console.log(
 );
 
 console.log(`Vrednost izraza 2 + 2 je ${2 + 2}`);
+console.log(NaN == NaN)
+console.log(NaN)
+
+console.log(undefined == null);
+console.log(undefined === null)
