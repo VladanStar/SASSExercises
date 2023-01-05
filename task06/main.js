@@ -101,3 +101,15 @@ console.log(
   'Generisani broj iz celobrojnog intervala [50, 150) je:',
   generisani_broj
 );
+const prva_rec = 'Ovo';
+const druga_rec = 'je';
+const treca_rec = 'recenica';
+
+// a
+const cela_recenica = prva_rec + ' ' + druga_rec + ' ' + treca_rec + '.';
+console.log(cela_recenica);
+// c
+let pozicija = cela_recenica.indexOf('recenica');
+console.log('Pozicija niske "recenica" u recenici je:', pozicija);
+pozicija = cela_recenica.indexOf('nepostojeca niska');
+console.log('Pozicija niske "nepostojeca niska" u recenici je:', pozicija);
