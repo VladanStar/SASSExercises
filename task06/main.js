@@ -9,3 +9,21 @@ let recenica = "vladan cupric"
 console.log(recenica.indexOf("nepostojeca"));
 let niz_brojeva = [1,2,3,4,5];
 console.log(typeof niz_brojeva);
+
+// -------------------------------
+
+const mesani_niz = [17.5, 'oop', false, 1000, -12.457, 'kiaa', true, true];
+
+function negiraj_bulove_vrednosti(niz) {
+  for (let i = 0; i < niz.length; ++i) {
+    if (typeof niz[i] === 'boolean') {
+      // Menjamo element prosledjenog niza
+      niz[i] = !niz[i];
+    }
+  }
+}
+
+
+console.log('Mesani niz pre poziva funkcije:   ' + mesani_niz);
+negiraj_bulove_vrednosti(mesani_niz);
+console.log('Mesani niz nakon poziva funkcije: ' + mesani_niz);
