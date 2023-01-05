@@ -7,3 +7,6 @@ console.log(8 * "two", typeof (8 * "two"));
 console.log(8 * NaN, typeof NaN);
 let recenica = "vladan cupric"
 console.log(recenica.indexOf("nepostojeca"));
+console.log(null == undefined);
+console.log(typeof null);
+console.log(typeof undefined);
