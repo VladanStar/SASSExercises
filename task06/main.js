@@ -7,3 +7,5 @@ console.log(8 * "two", typeof (8 * "two"));
 console.log(8 * NaN, typeof NaN);
 let recenica = "vladan cupric"
 console.log(recenica.indexOf("nepostojeca"));
+let niz_brojeva = [1,2,3,4,5];
+console.log(typeof niz_brojeva);
