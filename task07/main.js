@@ -1,1 +1,3 @@
-const prviPasus = document.getElementById("prvi")
+const prviPasus = document.getElementById("prvi");
+
+console.log(typeof prviPasus);
