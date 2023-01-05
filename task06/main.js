@@ -67,3 +67,9 @@ console.log(
 for (let i = 0; i < dvagrami.length; ++i) {
   console.log(i + 1 + '. 2-gram: ' + dvagrami[i]);
 }
+
+// ---------------------
+const niz1 = ['a', 'b']; // Kreiramo novi niz od dva elementa i cuvamo njegovu referencu u niz1
+const niz2 = ['a', 'b']; // Kreiramo novi niz od dva elementa i cuvamo njegovu referencu u niz2
+
+console.log('Da li su nizovi jednaki?', niz1 == niz2);
