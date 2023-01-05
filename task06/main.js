@@ -126,3 +126,5 @@ console.log(
   'Provera da li je vrednost NaN:',
   Number.isNaN(neuspesna_konverzija_1)
 );
+
+console.log(`Vrednost izraza 2 + 2 je ${2 + 2}`);
