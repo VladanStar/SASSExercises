@@ -196,3 +196,31 @@ function negiraj_bulove_vrednosti(niz) {
 console.log('Mesani niz pre poziva funkcije:   ' + mesani_niz);
 negiraj_bulove_vrednosti(mesani_niz);
 console.log('Mesani niz nakon poziva funkcije: ' + mesani_niz);
+
+let mesani_nizi = [17.5, 'oop', false, 1000, -12.457, 'kiaa', true, true];
+
+function izdvoji_samo_brojeve(niz) {
+  const novi_niz = [];
+  for (let i = 0; i < niz.length; ++i) {
+    if (typeof niz[i] === 'number') {
+      // Dodavanje jednog elementa na kraj niza
+      novi_niz.push(niz[i]);
+    }
+  }
+  return novi_niz;
+}
+
+const samo_brojevi = izdvoji_samo_brojeve(mesani_nizi);
+console.log('Niz sa brojevima od mesanog niza: ' + samo_brojevi);
+
+const niz_brojeva = [0, 1, 2, 3];
+
+function ukloni_poslednjih_n_elemenata(niz, n) {
+  for (let i = 0; i < n; i++) {
+    // Uklanjanje jednog elementa sa kraja niza (tj. poslednjeg elementa)
+    niz.pop();
+  }
+}
+console.log('Niz brojeva pre uklanjanja 2 elementa:   ' + niz_brojeva);
+ukloni_poslednjih_n_elemenata(niz_brojeva, 2);
+console.log('Niz brojeva nakon uklanjanja 2 elementa: ' + niz_brojeva);
