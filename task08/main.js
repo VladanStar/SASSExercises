@@ -180,3 +180,19 @@ if (prazna_promenljiva === nistavna_promenljiva) {
     'Vrednosti undefined i null NISU jednake i po vrednosti i po tipu'
   );
 }
+
+const mesani_niz = [17.5, 'oop', false, 1000, -12.457, 'kiaa', true, true];
+
+function negiraj_bulove_vrednosti(niz) {
+  for (let i = 0; i < niz.length; ++i) {
+    if (typeof niz[i] === 'boolean') {
+      // Menjamo element prosledjenog niza
+      niz[i] = !niz[i];
+    }
+  }
+}
+
+// Demonstracija da je originalni niz zaista promenjen
+console.log('Mesani niz pre poziva funkcije:   ' + mesani_niz);
+negiraj_bulove_vrednosti(mesani_niz);
+console.log('Mesani niz nakon poziva funkcije: ' + mesani_niz);
