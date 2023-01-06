@@ -276,3 +276,9 @@ pozicija = nukleotide.indexOf('g', pozicija + 1);
 console.log('2. nukleotid g se nalazi na poziciji ' + pozicija);
 pozicija = nukleotide.indexOf('g', pozicija + 1);
 console.log('3. nukleotid g se nalazi na poziciji ' + pozicija);
+
+// Uporedjivanje nizova po jednakosti
+const niz1 = ['a', 'b']; // Kreiramo novi niz od dva elementa i cuvamo njegovu referencu u niz1
+const niz2 = ['a', 'b']; // Kreiramo novi niz od dva elementa i cuvamo njegovu referencu u niz2
+
+console.log('Da li su nizovi jednaki?', niz1 == niz2);
