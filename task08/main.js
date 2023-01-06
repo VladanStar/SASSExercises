@@ -282,3 +282,34 @@ const niz1 = ['a', 'b']; // Kreiramo novi niz od dva elementa i cuvamo njegovu r
 const niz2 = ['a', 'b']; // Kreiramo novi niz od dva elementa i cuvamo njegovu referencu u niz2
 
 console.log('Da li su nizovi jednaki?', niz1 == niz2);
+
+
+nukleotide = ['a', 't', 'a', 'g', 'c', 'a', 'g', 't', 'c', 'c', 'a'];
+ sekvenca = 'atagcagtcca';
+
+function napravi_2grame(niz) {
+  const dvagrami1 = [];
+  for (let i = 0; i < niz.length -1; i++) {
+    // Izdvajanje podniza na osnovu datih indeksa a i b.
+    // Podniz koji se dobija je iz intervala indeksa [a, b).
+    const naredni_dvagram = niz.slice(i, i + 2);
+
+    // Promenljiva naredni_dvagram je niz
+    // Promenljiva dvagrami je niz
+    // => Ubacujemo niz u niz
+    // => Promenljiva dvagrami je visedimenzionalni niz
+    dvagrami1.push(naredni_dvagram);
+  }
+  return dvagrami1;
+}
+const dvagrami1 = napravi_2grame(nukleotide);
+console.log(
+  'DNK sekvenca ' +
+    sekvenca +
+    ' ima ukupno ' +
+    dvagrami1.length +
+    ' 2-grama i oni su:'
+);
+for (let i = 0; i < dvagrami1.length;i++) {
+  console.log(i + 1 + '. 2-gram: ' + dvagrami1[i]);
+}
