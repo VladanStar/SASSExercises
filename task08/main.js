@@ -155,4 +155,28 @@ console.log(`Korišćenjem šablon-literala
                 tekst se može prelamati u više linija
 što nije moguće uraditi korišćenjem jednostrukih ili dvostrukih navodnika`);
 
-console.log(`Vrednost izraza 2 + 2 je ${2 + 2}`); // 'Vrednost izraza 2 + 2 je 4'
+console.log(`Vrednost izraza 2 + 2 je ${2 + 2}`); // 'Vrednost izraza 2 + 2 je 4';
+
+
+const prazna_promenljiva = undefined;
+const nistavna_promenljiva = null;
+
+if (prazna_promenljiva == nistavna_promenljiva) {
+  console.log(
+    'Vrednosti undefined i null SE MOGU implicitno konvertovati jedna u drugu'
+  );
+} else {
+  console.log(
+    'Vrednosti undefined i null SE NE MOGU implicitno konvertovati jedna u drugu'
+  );
+}
+
+if (prazna_promenljiva === nistavna_promenljiva) {
+  console.log(
+    'Vrednosti undefined i null JESU jednake i po vrednosti i po tipu'
+  );
+} else {
+  console.log(
+    'Vrednosti undefined i null NISU jednake i po vrednosti i po tipu'
+  );
+}
