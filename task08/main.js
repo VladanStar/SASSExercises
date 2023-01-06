@@ -264,3 +264,15 @@ console.log(
 for (let i = 0; i < dvagrami.length; ++i) {
   console.log(i + 1 + '. 2-gram: ' + dvagrami[i]);
 }
+
+nukleotide = ['a', 't', 'a', 'g', 'c', 'a', 'g', 't', 'c', 'c', 'a'];
+
+// Pronalazak elementa u nizu se vrsi metodom indexOf.
+// Ako navedemo drugi argument metoda indexOf,
+// onda pretraga pocinje od tog indeksa umesto od pocetka niza.
+ pozicija = nukleotide.indexOf('g');
+console.log('1. nukleotid g se nalazi na poziciji ' + pozicija);
+pozicija = nukleotide.indexOf('g', pozicija + 1);
+console.log('2. nukleotid g se nalazi na poziciji ' + pozicija);
+pozicija = nukleotide.indexOf('g', pozicija + 1);
+console.log('3. nukleotid g se nalazi na poziciji ' + pozicija);
