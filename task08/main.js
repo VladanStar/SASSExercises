@@ -224,3 +224,13 @@ function ukloni_poslednjih_n_elemenata(niz, n) {
 console.log('Niz brojeva pre uklanjanja 2 elementa:   ' + niz_brojeva);
 ukloni_poslednjih_n_elemenata(niz_brojeva, 2);
 console.log('Niz brojeva nakon uklanjanja 2 elementa: ' + niz_brojeva);
+
+// Razbijanje niske po separatoru u elemente niza
+let sekvenca = 'a-t-a-g-c-a-g-t-c-c-a';
+let nukleotide = sekvenca.split('-');
+console.log('Kreirali smo niz nukleotida: ' + nukleotide);
+
+
+nukleotide = ['a', 't', 'a', 'g', 'c', 'a', 'g', 't', 'c', 'c', 'a'];
+sekvenca = nukleotide.join('');
+console.log('Kreirali smo DNK sekvencu: ' + sekvenca);
