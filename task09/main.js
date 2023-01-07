@@ -11,3 +11,14 @@ if (veze.length > 0) {
 } else {
   console.log('Na ovoj stranici ne postoje veze.');
 }
+
+const array = [1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4];
+const element = 1;
+const indices = [];
+
+for (let i = 0; i < array.length; i++) {
+  if (array[i] === element) {
+    indices.push(i);
+  }
+}
+console.log(indices);

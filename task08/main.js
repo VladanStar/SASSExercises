@@ -313,3 +313,6 @@ console.log(
 for (let i = 0; i < dvagrami1.length;i++) {
   console.log(i + 1 + '. 2-gram: ' + dvagrami1[i]);
 }
+const arr1 = "niska";
+const arr2 = "niska";
+console.log(arr1 === arr2)
