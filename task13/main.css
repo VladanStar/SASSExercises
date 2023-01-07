@@ -1,0 +1,9 @@
+.paragraf {
+    border: 5px salmon inset;
+    padding: 10px;
+  }
+
+  .neparni {
+    background-color: rgba(255, 105, 180, 0.6);
+    text-transform: lowercase;
+  }
