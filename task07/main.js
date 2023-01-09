@@ -1,6 +1,6 @@
 // const prviPasus = document.getElementById("prvi");
 
-// console.log(typeof prviPasus);
+// console.log(typeof prviPasugit pulls);
 
 const prviPasus = document.getElementById('prvi_pasus');
 if (prviPasus != null) {

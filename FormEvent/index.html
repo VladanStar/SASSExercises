@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  
+</head>
+<body>
+        <form method="" action="" id="formular" novalidate>
+            <!-- 
+                    Element u okviru kojeg će biti upisane informacije o 
+                    eventualnim greskama. 
+                -->
+            <div class="greska" id="greska"> </div>
+        
+            <fieldset>
+                <legend> Lični podaci </legend>
+        
+                <div>
+                    <label for="ime_prezime"> Ime i prezime*: </label>
+                    <input id="ime_prezime" type="text" placeholder="Pera Peric" maxlength="30" name="ime_prezime" required>
+                </div>
+        
+                <div>
+                    <label for="datum_rodjenja"> Datum rođenja: </label>
+                    <input id="datum_rodjenja" type="date" name="datum_rodjenja">
+                </div>
+        
+                <div>
+                    <label for="email"> Email: </label>
+                    <input id="email" name="email" type="email">
+                </div>
+        
+                <div>
+                    <label for="veb_adresa"> Veb adresa: </label>
+                    <input id="veb_adresa" name="veb_adresa" autocomplete="off" type="url">
+                </div>
+        
+                <div>
+                    <label for="username"> Korisničko ime*: </label>
+                    <input id="username" type="text" name="korisnicko_ime" required>
+                </div>
+        
+                <div>
+                    <label for="password"> Šifra*: </label>
+                    <input id="password" name="sifra" required type="password">
+                    <p id="upozorenje" class="greska">
+                        Šifra mora da sadrži makar 2 cifre!
+                    </p>
+                </div>
+        
+            </fieldset>
+        
+            <fieldset>
+                <legend> Obrazovanje </legend>
+        
+                <div>
+                    <div>
+                        <label for="fakultet"> Fakultet: </label>
+                        <select name="fakultet" id="fakultet">
+                            <option value=""> ------- </option>
+                            <optgroup label="tehnički fakulteti">
+                                <option value="matf"> MATF </option>
+                                <option value="etf"> ETF </option>
+                                <option value="fon"> FON </option>
+                            </optgroup>
+                            <optgroup label="društvene nauke">
+                                <option value="f"> Filološki fakultet </option>
+                            </optgroup>
+                            <optgroup label="umetnost">
+                                <option value="fdu" selected="selected"> FDU </option>
+                            </optgroup>
+                        </select>
+                    </div>
+        
+                    <div>
+                        <label for="univerzitet"> Univerzitet: </label>
+                        <input list="svi_univerziteti" id="univerzitet" name="univerzitet" type="text">
+                        <datalist id="svi_univerziteti">
+                            <option value="UBG"> Univerzitet u Beogradu </option>
+                            <option value="UNS"> Univerzitet u Novom Sadu </option>
+                            <option value="UNI"> Univerzitet u Nišu </option>
+                            <option value="UKG"> Univerzitet u Kragujevcu </option>
+                        </datalist>
+                    </div>
+                </div>
+        
+                <div>
+                    Godina studija:
+        
+                    <div>
+                        <input name="godina" id="godina_1" value="1" type="radio">
+                        <label for="godina_1">1</label>
+                    </div>
+        
+                    <div>
+                        <input name="godina" id="godina_2" value="2" type="radio">
+                        <label for="godina_2">2</label>
+                    </div>
+        
+                    <div>
+                        <input name="godina" id="godina_3" value="3" type="radio">
+                        <label for="godina_3">3</label>
+                    </div>
+        
+                    <div>
+                        <input name="godina" id="godina_4" value="4" type="radio">
+                        <label for="godina_4">4</label>
+                    </div>
+                </div>
+        
+                <div>
+                    Lista interesovanja:
+        
+                    <div>
+                        <input name="veb" id="veb" type="checkbox" checked>
+                        <label for="veb">veb programiranje</label>
+                    </div>
+        
+                    <div>
+                        <input name="paradigme" id="paradigme" type="checkbox">
+                        <label for="paradigme">programske paradigme</label>
+                    </div>
+        
+                    <div>
+                        <input name="grafika" id="grafika" type="checkbox">
+                        <label for="grafika">računarska grafika</label>
+                    </div>
+        
+                    <div>
+                        <input name="algoritmi" id="algoritmi" type="checkbox">
+                        <label for="algoritmi">algoritmi</label>
+                    </div>
+                </div>
+        
+            </fieldset>
+        
+            <div>
+                <label for="napomena"> Napomena: </label>
+                <br>
+                <textarea cols="80" rows="5" name="napomena" id="napomena" placeholder="Unesite napomenu..."></textarea>
+            </div>
+        
+            <div>
+                <input value="pošalji podatke" type="submit">
+                <input value="obriši podatke" type="reset">
+            </div>
+        </form>
+
+        <script src='main.js'></script>
+</body>
+</html>

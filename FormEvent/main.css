@@ -1,0 +1,14 @@
+   .greska {
+       color: red;
+       font-size: 14px;
+       margin-top: 25px;
+       margin-bottom: 25px;
+   }
+
+   fieldset legend {
+       color: orange;
+   }
+
+   p#upozorenje {
+       display: none;
+   }
