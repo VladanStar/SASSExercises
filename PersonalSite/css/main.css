@@ -95,7 +95,6 @@ padding: 0 9%;
 .btn-box .btn {
     position: relative;
     display: inline-flex;
-
     justify-content: center;
     align-items: center;
     width: 15rem;
@@ -107,6 +106,8 @@ padding: 0 9%;
     font-weight: 600;
     letter-spacing: .1rem;
     color:var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
 
 }
 .btn-box .btn::before {
@@ -114,8 +115,17 @@ padding: 0 9%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
     background: red;
     z-index: -1;
+    transition: .5s;
+}
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: var(--main-color);
+
+}
+.btn-box .btn:hover::before {
+    width: 100%;
 }
